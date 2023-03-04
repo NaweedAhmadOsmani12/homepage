@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    margin: 10% 0;
+    width: 375px;
+    padding: 0 5%;
+    font-family: 'Inter';
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: none;
+}
+#img2{
+    display: none;
+}
+#nav .nav1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    font-size: 18px;
+    line-height: 1.5cm;
+    padding-right:35%;
+    padding-left:8%;
+   padding-bottom: 90%;
+    background-color: white;
+    width: auto;
+    height: 100%;
+    border: 1px soid red;
+}
+
+#close{
+    position: relative; 
+    bottom:10%;
+    left:150%;
+}
+
+#nav ul li{
+    list-style: none;
+    justify-content: center;
+}
+
+.nav3{
+    display: none;
+}
+#nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+#nav ul li a:hover{
+    color:orange;
+    cursor: pointer;
+}
+
+#nav .menu{
+    margin-top: 10px;
+}
+.menu1{
+    display: none;
+}
+
+/* Main BODY */
+#main{
+    margin-top: 2%;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-row-gap: 1em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+}
+/* left section */
+
+#main #left h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top:1rem;
+    color: #000029;
+}
+
+#main #left p{
+    margin-top: 10px;;
+    font-size:15px;
+    line-height: 0.6cm;
+    color:#5D5F79 ;   
+}
+#main #left button{
+    font-size:16px;
+    margin-top:2em;
+    background-color:#F05D50;
+    border-style: none;
+    padding:5% 17%;
+    color:white;
+}
+#main #left button:hover{
+    background-color:#000029;
+    cursor: pointer;
+}
+/* right section */
+
+#main #right{
+    margin-top:2rem;
+    background-color: #000029;
+    color:white;
+    padding:1.5em 1.3em;
+}
+
+#main #right h1{
+    color:#E8AA53;
+    padding-bottom:0.6em;
+    font-weight: 800;
+}
+#main #right h3{
+    padding-bottom: 0.5em;
+    font: 500;
+}
+
+#main #right h3:hover{
+    color:#E8AA53;
+    cursor: pointer;
+}
+
+#main #right p{
+    font-size: 15px;
+}
+
+#main #right hr{
+    margin: 2.4em 0em;
+    width: 100%;
+    color:white;
+}
+/* bottom section */
+#bottom{
+    margin-bottom:10%;
+}
+
+#main #bottom .text{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+#main #bottom img{
+    width: 100%;
+}
+
+#main #bottom .text .context{
+    padding-top: 11%;
+    padding-left: 9%;
+    padding-bottom: 0;
+}
+
+#main #bottom .text .context h2{
+    color:#9A9CB1;
+    margin-bottom: 0.3em;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+}
+#main #bottom .text .context h3{
+    font-weight: 700;
+}
+#main #bottom .text .context h3:hover{
+    color:#F05D50;
+    cursor: pointer;
+}
+#main #bottom .text .context p{
+    font-size: 15px;
+    color:#5D5F79;
+    margin-top: 7%;
+}
+
+@media screen and (min-width: 376px) {
+    #container{
+        width: 80%;
+        height: auto;
+        margin: 2% 10%;
+        padding: 3%;
+    }
+    
+    #nav ul{
+        display: flex;
+        width: 40%;
+        padding-top: 1.5%;
+    }
+    #img2{
+        display: block;
+    }
+    #nav ul li{
+        display: inline-block;
+        padding-right: 9%;
+    }
+    
+    #main1{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+    #left{
+        margin-right: 6%;
+    }
+    #img2{
+        width: 100%;
+    }
+    #main #left #contents{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        grid-gap:24%;
+    }
+    
+    
+    #main #left  h1{
+        font-size:40px;
+    }
+  
+    #right #content{
+        margin-top:4%;
+        padding-left:8%;
+        padding-right:8%;
+    }
+    #main #right{
+        margin-left:1%;
+    }
+    #main #right h1{
+        padding-bottom: 10%;
+    }
+    #main #right hr{
+        margin:2em 0;
+    }
+    #bottom {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+ 
+    #img1{display: none;}
+    #menu{display: none;}
+}
